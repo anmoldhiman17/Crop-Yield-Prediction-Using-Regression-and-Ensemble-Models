@@ -1,135 +1,117 @@
-📌 Overview
+🌾 Crop Yield Prediction Using Regression & Ensemble Models
+A Machine Learning approach to revolutionize agricultural productivity.
+<p align="center"> <img src="https://i.ibb.co/vQzhrwv/Crop-Yield-Modern-Banner.png" width="100%"> </p>
+🚀 Overview
 
-This project predicts crop yield using advanced Machine Learning models.
-It analyzes real agricultural & climatic parameters such as:
+Agriculture is highly sensitive to climatic conditions, making crop yield prediction a crucial challenge.
+This project leverages Machine Learning to accurately predict crop yield using real-world features like:
 
 🌧 Rainfall
 
-🌡 Average Temperature
+🌡 Temperature
 
 🧪 Pesticide Usage
 
-🌍 Geographical Area
+🗺 Area (Country/Region)
 
 🌾 Crop Type
 
 📅 Year
 
-The goal is to provide farmers, researchers, and policymakers with accurate, data-driven predictions that support smarter agricultural planning.
+Using advanced regression and ensemble algorithms, the project identifies patterns in agricultural data and predicts yield with up to 98.7% accuracy.
 
-🎯 Project Highlights
+⭐ Key Features
 
-✨ Data preprocessing + feature engineering
-✨ Comparison of 3 ML models
-✨ Visualization of trends & correlations
-✨ Model performance metrics (MAE, RMSE, R²)
-✨ Best model with 98.7% accuracy
-✨ Fully deployed using Streamlit
+✔ Cleaned, preprocessed & feature-engineered dataset
+✔ ML Model Training with 3 algorithms
+✔ Detailed model comparison
+✔ Performance metrics (MAE, RMSE, R² Score)
+✔ Visualizations for deeper insight
+✔ Final model exported as .pkl
+✔ Fully interactive Streamlit Web App for real-time prediction
 
 🤖 Machine Learning Models Used
 Model	R² Score	MAE	RMSE
-Linear Regression	0.6448	31791.65	50757.59
-Gradient Boosting	0.8754	19448.66	30052.15
-Random Forest (Winner)	⭐ 0.9876	⭐ 3464.94	⭐ 9482.22
+Linear Regression	0.6448	31,791.65	50,757.59
+Gradient Boosting Regressor	0.8754	19,448.66	30,052.15
+⭐ Random Forest Regressor	⭐ 0.9876	⭐ 3,464.94	⭐ 9,482.22
 
-🔥 Random Forest delivered the best accuracy and is used for final prediction.
+➡️ Random Forest is selected as the final model (Best Performance).
 
-🧠 Workflow
-Dataset → Cleaning → Feature Engineering → Model Training 
-        → Evaluation → Export .pkl Model → Streamlit Deployment
+📊 Project Workflow
+1️⃣ Dataset Collection
+2️⃣ Data Cleaning & Preprocessing
+3️⃣ Feature Engineering
+4️⃣ Model Training (Regression + Ensemble Models)
+5️⃣ Model Evaluation (MAE, RMSE, R²)
+6️⃣ Model Comparison
+7️⃣ Saving Best Model (.pkl)
+8️⃣ Streamlit Deployment
 
-📊 Features & Visualizations
-
-The project includes insights such as:
-
-Rainfall vs Yield
-
-Temperature vs Yield
-
-Pesticide usage trends
-
-Crop distribution
-
-Model comparison charts
-
-Visual graphs make the data easier to understand for stakeholders.
-
-🌐 Streamlit Web App
-
-An interactive prediction interface where users can input:
-
-Rainfall
-
-Temperature
-
-Pesticides
-
-Year
-
-Crop
-
-Area
-
-→ And instantly get the predicted yield.
-
-🛠 Tech Stack
-Category	Tools
+🧠 Tech Stack
+Category	Tools Used
 Language	Python
-ML	Scikit-Learn
-Data Handling	Pandas, NumPy
+Libraries	Pandas, NumPy, Scikit-Learn
 Visualization	Matplotlib, Seaborn
 Deployment	Streamlit
 Model Saving	Joblib
+🌐 Streamlit Web Application
+
+The project includes a clean & interactive UI made with Streamlit.
+Users can input:
+
+Year
+
+Rainfall
+
+Average Temperature
+
+Pesticide Usage
+
+Crop Type
+
+Area
+
+And instantly get the predicted crop yield.
+
+Run the app locally:
+
+streamlit run app.py
+
 📁 Project Structure
 📦 Crop-Yield-Prediction
 │
-├── 📄 app.py                  # Streamlit app
-├── 📄 model.pkl               # Trained Random Forest model
-├── 📄 requirements.txt        # Dependencies
-├── 📄 README.md               # Documentation
+├── app.py                    # Streamlit Web App
+├── model.pkl                 # Trained Random Forest Model
+├── requirements.txt          # Project Dependencies
+├── README.md                 # Documentation
 │
-└── 📂 dataset/                # Rainfall, Temperature, Yield, Pesticides etc.
+└── dataset/
+     ├── yield.csv
+     ├── rainfall.csv
+     ├── pesticides.csv
+     ├── temp.csv
+     └── yield_df.csv
 
-🚀 How to Run Locally
-1️⃣ Clone the repository
+🔧 How to Run the Project Locally
+1️⃣ Clone this repository
 git clone https://github.com/your-username/Crop-Yield-Prediction.git
 cd Crop-Yield-Prediction
 
-2️⃣ Install dependencies
+2️⃣ Install the dependencies
 pip install -r requirements.txt
 
-3️⃣ Run the Streamlit App
+3️⃣ Run the Streamlit app
 streamlit run app.py
 
 🌱 Future Enhancements
 
-Integration of satellite imagery
+✨ Integration of satellite imagery (NDVI, crop health index)
+✨ Incorporating soil properties (pH, nitrogen, phosphorus)
+✨ Real-time weather API integration
+✨ Deep learning: LSTM / CNN models for time-series prediction
+✨ Mobile application version
 
-Incorporating soil nutrient data
-
-Real-time weather forecasting API
-
-Deep learning models (LSTM, CNN)
-
-Mobile application
-
-🤝 Contributors
-
-👤 Anmol Dhiman
-👤 Tanish Sonker
-👤 Lucky Sonker
-👤 Nishant Chauhan
-
-📚 References
-
-FAO Crop Production Statistics
-
-Research papers on ML in Agriculture
-
-Random Forest Prediction Models
-
-Gradient Boosting Applications
-
-⭐ Support the Project
-
-If you like this work, give the repo a ⭐ on GitHub — it motivates us to build more awesome projects!
+👥 Contributors
+Name	Role
+Anmol Dhiman	Lead Developer & ML Engineer
