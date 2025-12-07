@@ -1,8 +1,6 @@
 🌾 Crop Yield Prediction Using Regression & Ensemble Models
 A Machine Learning approach to revolutionize agricultural productivity.
-<p align="center">
-  <img src="https://i.imgur.com/Gx1w5xP.png" width="100%">
-</p>
+
 
 🚀 Overview
 
