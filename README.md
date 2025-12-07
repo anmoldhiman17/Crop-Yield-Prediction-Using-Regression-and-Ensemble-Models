@@ -56,54 +56,7 @@ Libraries	Pandas, NumPy, Scikit-Learn
 Visualization	Matplotlib, Seaborn
 Deployment	Streamlit
 Model Saving	Joblib
-🌐 Streamlit Web Application
 
-The project includes a clean & interactive UI made with Streamlit.
-Users can input:
-
-Year
-
-Rainfall
-
-Average Temperature
-
-Pesticide Usage
-
-Crop Type
-
-Area
-
-And instantly get the predicted crop yield.
-
-Run the app locally:
-
-streamlit run app.py
-
-📁 Project Structure
-📦 Crop-Yield-Prediction
-│
-├── app.py                    # Streamlit Web App
-├── model.pkl                 # Trained Random Forest Model
-├── requirements.txt          # Project Dependencies
-├── README.md                 # Documentation
-│
-└── dataset/
-     ├── yield.csv
-     ├── rainfall.csv
-     ├── pesticides.csv
-     ├── temp.csv
-     └── yield_df.csv
-
-🔧 How to Run the Project Locally
-1️⃣ Clone this repository
-git clone https://github.com/your-username/Crop-Yield-Prediction.git
-cd Crop-Yield-Prediction
-
-2️⃣ Install the dependencies
-pip install -r requirements.txt
-
-3️⃣ Run the Streamlit app
-streamlit run app.py
 
 🌱 Future Enhancements
 
